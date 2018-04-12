@@ -32,9 +32,9 @@
                 <div class="tabs">
                     <div class="search"><i class="fas fa-search"></i></div>
                     <div class="cast"><div class="tab">Cast & Crew<i class="far fa-smile"></i></div></div>
-                    <div class="vid"><i class="far fa-smile"></i><br><div class="tab">Videos</div></div>
-                    <div class="topics"><i class="far fa-smile"></i><br><div class="tab">Topics</div></div>
-                    <div class="archive"><i class="far fa-smile"></i><br><div class="tab">Archive</div></div>
+                    <div class="vid"><div class="tab">Videos<i class="far fa-smile"></i></div></div>
+                    <div class="topics"><div class="tab">Topics<i class="far fa-smile"></i></div></div>
+                    <div class="archive"><div class="tab">Archive<i class="far fa-smile"></i></div></div>
                 </div>
                 <div class="menu foldtl">
 
