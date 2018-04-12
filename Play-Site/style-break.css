@@ -1,0 +1,204 @@
+body {
+    background-image: url("bg-main.png");
+    font-family: Arial, Helvetica, sans-serif;  
+    /* background-repeat: repeat-x; */
+}
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 800px 500px 500px 500px;
+    grid-template-areas:
+        "title"
+        "main"
+        "bottom"
+        "sidebar"
+        "sidebar"
+}
+
+@media only screen and (min-width: 850px) {
+    .container {
+        display: grid;
+        grid-gap: 20px;
+        /* grid-template-columns: repeat(auto-fill, minmax(400px,1fr)); */
+        grid-template-columns: minmax(400px,1.6fr) 400px;
+        grid-template-rows: 250px 800px 500px;
+        grid-template-areas:
+            "title      sidebar"
+            "main       sidebar"
+            "bottom     sidebar"
+    }            
+}
+
+@media only screen and (min-width: 1050px) {
+    .container {
+        padding: 0 5% 0 5%;
+        display: grid;
+        grid-gap: 20px;
+        /* grid-template-columns: repeat(auto-fill, minmax(400px,1fr)); */
+        grid-template-columns: minmax(400px,1.6fr) 400px;
+        grid-template-rows: 250px 800px 500px;
+        grid-template-areas:
+            "title      sidebar"
+            "main       sidebar"
+            "bottom     sidebar"
+    }            
+}
+
+.title {
+    grid-area: title;
+    margin: 50px auto auto auto;
+    
+}
+
+.sidebar {
+    grid-area: sidebar;
+    grid-gap: 0;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-areas:
+        "tabs   menu"
+}
+
+.tabs {
+    grid-area: tabs;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: 40px 100px auto auto auto auto;
+    grid-template-areas:
+        "search"
+        "."
+        "cast"
+        "vid"
+        "topics"
+        "archive"
+}
+
+.search {
+    grid-area: search;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    left: 2px;
+    z-index: 1;
+}
+
+.cast {
+    grid-area: cast;
+    background-color: #F3BD48;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 1;
+}
+
+.vid {
+    grid-area: vid;
+    background-color: #F3BD48;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 1;
+}
+
+.topics {
+    grid-area: topics;
+    background-color: #F3BD48;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 1;
+}
+
+.archive {
+    grid-area: archives;
+    background-color: #F3BD48;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 1;
+}
+
+.tab {
+    transform: rotate(-90deg);
+}
+
+.menu {
+    grid-area: menu;
+    position: relative;
+    bottom: 10px;
+    background-color: #f3bd47;
+    background-size: 10px 10px;
+    background-image: linear-gradient(to right, #F2B640 5px, transparent 2px);
+    border: 3px ridge white; 
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-area: main;
+    background-color: #f3bd47;
+    padding: 20px;
+    border-radius: 10px;
+    background-size: 10px 10px;
+    background-image: linear-gradient(to right, #F2B640 1px, transparent 1px), linear-gradient(to bottom, #F1B33D 1px, transparent 1px);
+}
+
+.sub {
+    background-color: rgb(248,215,145,.5);
+    position: relative;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    background-color: #d33;
+    color: #fff;
+}
+
+.tags {
+    position: relative;
+    top: 10px;
+    padding: 0 30px 0 30px;
+    background-color: transparent;
+}
+
+.bottom {
+    grid-area: bottom;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.foldtl {
+    position: relative;
+ }
+  /* bottom right page turn from: https://codepen.io/brownerd/pen/lEHwL 
+    also see: https://designshack.net/articles/css/code-a-simple-folded-corner-effect-with-css/
+
+    Still not working because background of nav bar. Consider porting this solution: https://codepen.io/pouretrebelle/pen/pbwIj
+    */
+
+.foldtl:before {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 0px;
+    height: 0px;
+    border-top: 70px solid #eee;
+    border-right: 70px solid transparent;
+}
+
+.foldtl:after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 0px;
+  height: 0px;
+  border-bottom: 70px solid #272822; 
+  border-left: 70px solid transparent;
+}

@@ -1,0 +1,205 @@
+/* 
+font families:
+font-family: 'Montserrat', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Just Me Again Down Here', cursive;
+ */
+
+body {
+    background-image: url("bg-main.png");
+    font-family: Lato, Helvetica, sans-serif;  
+    /* background-repeat: repeat-x; */
+}
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 800px 500px 500px 500px;
+    grid-template-areas:
+        "title"
+        "main"
+        "bottom"
+        "sidebar"
+        "sidebar"
+}
+
+@media only screen and (min-width: 850px) {
+    .container {
+        display: grid;
+        grid-gap: 20px;
+        /* grid-template-columns: repeat(auto-fill, minmax(400px,1fr)); */
+        grid-template-columns: minmax(400px,1.6fr) 400px;
+        grid-template-rows: 250px 800px 500px;
+        grid-template-areas:
+            "title      sidebar"
+            "main       sidebar"
+            "bottom     sidebar"
+    }            
+}
+
+@media only screen and (min-width: 1050px) {
+    .container {
+        padding: 0 5% 0 5%;
+        display: grid;
+        grid-gap: 20px;
+        /* grid-template-columns: repeat(auto-fill, minmax(400px,1fr)); */
+        grid-template-columns: minmax(400px,1.6fr) 400px;
+        grid-template-rows: 250px 800px 500px;
+        grid-template-areas:
+            "title      sidebar"
+            "main       sidebar"
+            "bottom     sidebar"
+    }            
+}
+
+.title {
+    grid-area: title;
+    margin: 50px auto auto auto;
+    
+}
+
+.fas , .far {
+    font-size: 20px;
+    position: relative;
+    color: #CF1B2A;
+    text-shadow: 1px 1px 5px rgba(65, 65, 65, 0.5);
+    top: 5px;
+    left: 5px;
+}
+.sidebar {
+    grid-area: sidebar;
+    grid-gap: 0;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    grid-template-areas:
+        "tabs   menu"
+}
+
+.tabs {
+    grid-area: tabs;
+}
+
+.search {
+    height: 30px;
+    width: 30px;
+    align: center;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    left: 2px;
+    z-index: 1;
+    margin-bottom: 100px;
+}
+
+.cast {
+    height: 150px;
+    background-color: #F3BD48;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.vid, .topics, .archive {
+    height: 120px;
+    background-color: #F3BD48;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    position: relative;
+    top: 10px;
+    transform: rotate(-90deg);
+    width: 112px;
+    left: -40px;
+    top: 15px;
+    color: rgba(77, 58, 58, 255);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0px 0px 4px rgba(65, 65, 65, 0.45);
+}
+
+.menu {
+    grid-area: menu;
+    position: relative;
+    bottom: 10px;
+    background-color: #f3bd47;
+    background-size: 10px 10px;
+    background-image: linear-gradient(to right, #F2B640 5px, transparent 2px);
+    border: 3px ridge white; 
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-area: main;
+    background-color: #f3bd47;
+    padding: 20px;
+    border-radius: 10px;
+    background-size: 10px 10px;
+    background-image: linear-gradient(to right, #F2B640 1px, transparent 1px), linear-gradient(to bottom, #F1B33D 1px, transparent 1px);
+}
+
+.sub {
+    background-color: rgb(248,215,145,.5);
+    position: relative;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    background-color: #d33;
+    color: #fff;
+}
+
+.tags {
+    position: relative;
+    top: 10px;
+    padding: 0 30px 0 30px;
+    background-color: transparent;
+}
+
+.bottom {
+    grid-area: bottom;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.foldtl {
+    position: relative;
+ }
+  /* bottom right page turn from: https://codepen.io/brownerd/pen/lEHwL 
+    also see: https://designshack.net/articles/css/code-a-simple-folded-corner-effect-with-css/
+
+    Still not working because background of nav bar. Consider porting this solution: https://codepen.io/pouretrebelle/pen/pbwIj
+    */
+
+.foldtl:before {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 0px;
+    height: 0px;
+    border-top: 70px solid #eee;
+    border-right: 70px solid transparent;
+}
+
+.foldtl:after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 0px;
+  height: 0px;
+  border-bottom: 70px solid #272822; 
+  border-left: 70px solid transparent;
+}
