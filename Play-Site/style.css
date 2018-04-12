@@ -59,14 +59,6 @@ body {
     
 }
 
-.fas , .far {
-    font-size: 20px;
-    position: relative;
-    color: #CF1B2A;
-    text-shadow: 1px 1px 5px rgba(65, 65, 65, 0.5);
-    top: 5px;
-    left: 5px;
-}
 .sidebar {
     grid-area: sidebar;
     grid-gap: 0;
@@ -93,33 +85,34 @@ body {
     margin-bottom: 100px;
 }
 
-.cast {
-    height: 150px;
-    background-color: #F3BD48;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    margin-bottom: 20px;
-}
 
-.vid, .topics, .archive {
-    height: 120px;
-    background-color: #F3BD48;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.tab {
+.fas , .far {
+    transform: rotate(90deg);
+    font-size: 20px;
     position: relative;
+    color: #CF1B2A;
+    text-shadow: 1px 1px 5px rgba(65, 65, 65, 0.5);
+    top: 5px;
+    left: 5px;
+}
+
+
+.cast, .vid, .topics, .archive {
+    /* position: relative;
     top: 10px;
-    transform: rotate(-90deg);
-    width: 112px;
     left: -40px;
-    top: 15px;
+    top: 15px; */
+    white-space: nowrap;
     color: rgba(77, 58, 58, 255);
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: 0px 0px 4px rgba(65, 65, 65, 0.45);
+    height: 120px;
+    background-color: #F3BD48;
+    transform: rotate(-90deg);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .menu {
