@@ -36,8 +36,19 @@
                     <div class="topics"><div class="tab">Topics<i class="far fa-smile"></i></div></div>
                     <div class="archive"><div class="tab">Archive<i class="far fa-smile"></i></div></div>
                 </div>
-                <div class="menu foldtl">
-
+                <div class="menu foltl">
+                    <div class="heading">Lastest blogs from Mellanie</div>
+                    <div>Post 1</div>
+                    <div>Post 2</div>
+                    <div>Post 3</div>
+                    <div>Post 4</div>
+                    <div>Post 5</div>
+                    <div class="heading">Latest posts</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
             </div>
         </div>

@@ -92,16 +92,18 @@ body {
     position: relative;
     color: #CF1B2A;
     text-shadow: 1px 1px 5px rgba(65, 65, 65, 0.5);
-    top: 5px;
+    top: 1.5px;
     left: 5px;
 }
 
 
 .cast, .vid, .topics, .archive {
     display: inline-block;
-    height: 120px;
-    padding-left: 5px;
-    padding-right: 5px;
+    position: relative;
+    left: 127px;
+    padding-left: 9px;
+    padding-right: 12px;
+    padding-top: 5px;
     white-space: nowrap;
     color: rgba(77, 58, 58, 255);
     text-transform: uppercase;
@@ -113,17 +115,28 @@ body {
     transform-origin: bottom left;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    margin-bottom: 20px;
 }
 
+.t {
+    padding-top: 10px;
+}
 .menu {
     grid-area: menu;
     position: relative;
+    display: flex;
+    flex-direction: column;
     bottom: 10px;
     background-color: #f3bd47;
     background-size: 10px 10px;
     background-image: linear-gradient(to right, #F2B640 5px, transparent 2px);
     border: 3px ridge white; 
+    box-shadow: 0 0 7px rgba(65, 65, 65, 0.95);
+}
+
+.heading {
+    padding: 10px;
+    background: white;
+    box-shadow: 0 4px 4px -2px #000000;
 }
 
 .main {
