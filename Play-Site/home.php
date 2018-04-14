@@ -9,46 +9,48 @@
         <title>Mellanie's Blog</title>
     </head>
     <body>
-        <div class="container">
 			<div class="menu">
+				<div class="tabs">
+					<div class="search">
+						<div class="search-shadow"></div>
+						<span class="fas">M</span>
+						<img src="img/search.png" class="search-text"/>
+					</div>
+					<div class="cast"><div class="tab">Cast & Crew</div><div class="far">y</div></div>
+					<div class="vid"><div class="tab">Videos</div><div class="far">V</div></div>
+					<div class="topics"><div class="tab">Topics</div><div class="far">g</div></div>
+					<div class="archive"><div class="tab">Archive</div><div class="far">5</div></div>
+				</div>
+
 				<div class="sidebar"> 
-					<div class="tabs">
-						<div class="search">
-							<div class="search-shadow"></div>
-							<span class="fas">M</span>
-							<img src="img/search.png" class="search-text"/>
+					
+					<div class="blogger-posts">
+						<div class="heading">Lastest posts from <span id="auth">Mellanie</span></div>
+						<div class="post">The fire is so delightful (movie)
+							<br><span class="date">posted on December 15, 2011</span>					
 						</div>
-						<div class="cast"><div class="tab">Cast & Crew<div class="far">y</div></div></div>
-						<div class="vid"><div class="tab">Videos<div class="far">V</div></div></div>
-						<div class="topics"><div class="tab">Topics<div class="far">g</div></div></div>
-						<div class="archive"><div class="tab">Archive<div class="far">5</div></div></div>
+						<hr>
+						<div class="post">Agronomy Courtyard
+							<br><span class="date">posted on December 15, 2011</span>
+						</div>
+						<hr>
+						<div class="post">College of Technology and Sciences Student Council
+							<br><span class="date">posted on December 15, 2011</span>
+						</div>
+						<hr>
+						<div class="post">Mellanie’s Intro (movie)
+							<br><span class="date">posted on December 15, 2011</span>
+						</div>
+						<hr>
+						<div class="post">Greetings from just up the road
+							<br><span class="date">posted on December 15, 2011</span>
+						</div>
+						<hr>
+						<div class="post">
+							<div class="button author-more">View All</div>
+						</div>
 					</div>
-
-					<div class="heading">Lastest posts from <span id="auth">Mellanie</span></div>
-					<div class="post">The fire is so delightful (movie)
-						<br><span class="date">posted on December 15, 2011</span>					
-					</div>
-					<hr>
-					<div class="post">Agronomy Courtyard
-						<br><span class="date">posted on December 15, 2011</span>
-					</div>
-					<hr>
-					<div class="post">College of Technology and Sciences Student Council
-						<br><span class="date">posted on December 15, 2011</span>
-					</div>
-					<hr>
-					<div class="post">Mellanie’s Intro (movie)
-						<br><span class="date">posted on December 15, 2011</span>
-					</div>
-					<hr>
-					<div class="post">Greetings from just up the road
-						<br><span class="date">posted on December 15, 2011</span>
-					</div>
-					<hr>
-					<div class="post">
-						<div class="button author-more">View All</div>
-					</div>
-
+					
 					<div class="recent-posts">
 						<div class="heading">Latest posts</div>
 						<div class="post">The fire is so delightful (movie)

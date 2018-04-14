@@ -8,11 +8,9 @@ font-family: 'Just Me Again Down Here', cursive;
 @font-face {font-family:"Heydings Icons";src:url("font-face/heydings_icons.eot?") format("eot"),url("font-face/heydings_icons.woff") format("woff"),url("font-face/heydings_icons.ttf") format("truetype"),url("font-face/heydings_icons.svg#HeydingsIcons") format("svg");font-weight:normal;font-style:normal;}
 
 body {
-    /* background-image: url("bg-main.png"); */
     text-align: center;
     background-color: #3CA879;
 	font-family: Lato, Helvetica, sans-serif;  
-    /* background-repeat: repeat-x; */
 }
 
 a {
@@ -20,19 +18,6 @@ a {
 	color: inherit;
 }
 
-.container {
-}
-
-@media only screen and (min-width: 850px) {
-    .container {
-    }            
-}
-
-@media only screen and (min-width: 1050px) {
-    .container {
-		margin: 0 20px;
-    }            
-}
 
 .title {
 	text-align: center;
@@ -61,7 +46,6 @@ a {
 	
 .main {
 	text-align: left;
-	float: left;
     grid-area: main;
     background-color: #f3bd47;
     padding: 20px;
@@ -108,19 +92,8 @@ h2 {
 	color: rgb(255,255,255);
 }
 
-/* hear on down is CSS for the sidebar/menu */
-.sidebar {
-    grid-area: sidebar;
-    grid-gap: 0;
-    display: grid;
-    grid-template-columns: 30px 1fr;
-    grid-template-areas:
-        "tabs   menu"
-}
-
 .tabs {
 	position: absolute;
-	
 }
 
 .search {
@@ -131,17 +104,18 @@ h2 {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     position: relative;
-    left: 2px;
+    left: -33px;
     z-index: 1;
     margin-bottom: 120px;
-	box-shadow: -2px -2px 10px rgba(65, 65, 65, 0.5);
+	margin-top: 7px;
+	box-shadow: -2px -2px 3px rgba(65, 65, 65, 0.5);
 }
 
 /* hack to make the shaddow on only the left/top/bottom of search */
 .search-shadow {
 	position: absolute;	
 	bottom: 0px;
-	box-shadow: -2px 2px 10px rgba(65, 65, 65, 0.5);
+	box-shadow: -2px 2px 4px rgba(65, 65, 65, 0.5);
 	height: 32px;
 	z-index: -1;
     border-top-left-radius: 5px;
@@ -183,12 +157,16 @@ h2 {
     top: 17px;
 }
 
+.tab {
+	margin-right: 
+}
 
 .cast, .vid, .topics, .archive {
     position: relative;
-    left: 127px;
+    left: 90px;
+	z-index: -1;
     padding-left: 14px;
-    padding-right: 35px;
+    padding-right: 0;
     padding-top: 7px;
     white-space: nowrap;
     color: rgba(77, 58, 58, 255);
@@ -196,6 +174,7 @@ h2 {
     font-weight: bold;
     text-shadow: 0px 0px 4px rgba(65, 65, 65, 0.45);
     height: 120px;
+	margin-top: 10px;
     background-color: #F3BD48;
     transform: rotate(-90deg);
     transform-origin: bottom left;
@@ -203,17 +182,14 @@ h2 {
     border-top-right-radius: 5px;
 }
 
-.archive {
-	top: 16px;
-}
 
 .menu {
-    float: right;
-	width: 400px;
 	text-align: left;
 	font-weight: bold;
     position: relative;
+	left: 40px;
     display: flex;
+	width: calc(100% - 40px);
     flex-direction: column;
     bottom: 10px;
     background-color: #f3bd47;
