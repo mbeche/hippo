@@ -10,55 +10,29 @@
     </head>
     <body>
         <div class="container">
-            <div class="title">
-				<div id="com">.com</div>
-				<span id="school-life">school life</span>
-			</div>
-            <div class="main element">
-                <div class="sub">
-					<img class="headshot" src="img/mellanie-post.png" />
-					<div class="author">by Mellanie</div>
-                    <h2>Student in New York: Statue of Liberty</h2>
-					<div class="date">December 13, 2011</div>
-					<p>Easily the best part about being in New York for a football game is the location! There is so much to do in New York, I definitely didn’t do everything I wanted to do!</p>
-
-					<p>I also went to the top of 30 Rock!  This is the view from the top facing the Empire State  Building!</p>
-                </div>
-                <div class="tags">
-                    <p>Categories: Christmas, ISU, Social Life, Videos</p>
-                    <p>Tags: Admissions, school life, Cyclones, Iowa State University, ISU, memorial union, Midnight pancakes, traditions</p>
-                </div>
-            </div>
-            <div class="bottom">
-                <div class="page ">
-                    <h2>Headline</h2>
-                    <p>Lorem ipsum dolor sit amet...</p>
-                </div>
-            </div>
-            <div class="sidebar"> 
-                <div class="tabs">
-                    <div class="search">
-						<div class="search-shadow"></div>
-						<span class="fas">M</span>
-						<img src="img/search.png" class="search-text"/>
+			<div class="menu">
+				<div class="sidebar"> 
+					<div class="tabs">
+						<div class="search">
+							<div class="search-shadow"></div>
+							<span class="fas">M</span>
+							<img src="img/search.png" class="search-text"/>
+						</div>
+						<div class="cast"><div class="tab">Cast & Crew<div class="far">y</div></div></div>
+						<div class="vid"><div class="tab">Videos<div class="far">V</div></div></div>
+						<div class="topics"><div class="tab">Topics<div class="far">g</div></div></div>
+						<div class="archive"><div class="tab">Archive<div class="far">5</div></div></div>
 					</div>
-                    <div class="cast"><div class="tab">Cast & Crew<div class="far">y</div></div></div>
-                    <div class="vid"><div class="tab">Videos<div class="far">V</div></div></div>
-                    <div class="topics"><div class="tab">Topics<div class="far">g</div></div></div>
-                    <div class="archive"><div class="tab">Archive<div class="far">5</div></div></div>
-                </div>
-
-                <div class="menu">
 
 					<div class="heading">Lastest posts from <span id="auth">Mellanie</span></div>
-                    <div class="post">The fire is so delightful (movie)
+					<div class="post">The fire is so delightful (movie)
 						<br><span class="date">posted on December 15, 2011</span>					
 					</div>
-                    <hr>
+					<hr>
 					<div class="post">Agronomy Courtyard
 						<br><span class="date">posted on December 15, 2011</span>
 					</div>
-                    <hr>
+					<hr>
 					<div class="post">College of Technology and Sciences Student Council
 						<br><span class="date">posted on December 15, 2011</span>
 					</div>
@@ -114,14 +88,47 @@
 						<br/>
 						<a href="#">Subscribe</a>
 					</div>
+					
 					<hr class="menu-hr"/>
 
 					<div class="recent-posts">
 						<div class="copyright">&copy; 2012 School Life.</div>
 					</div>
 
+				</div>
+			</div>
+
+			<div class="title">
+				<div id="com">.com</div>
+				<span id="school-life">school life</span>
+			</div>
+			
+            <div class="main">
+                <div class="sub">
+					<img class="headshot" src="img/mellanie-post.png" />
+					<div class="author">by Mellanie</div>
+                    <h2>Student in New York: Statue of Liberty</h2>
+					<div class="date">December 13, 2011</div>
+					<p>Easily the best part about being in New York for a football game is the location! There is so much to do in New York, I definitely didn’t do everything I wanted to do!</p>
+
+					<p>I also went to the top of 30 Rock!  This is the view from the top facing the Empire State  Building!</p>
                 </div>
+				
+                <div class="tags">
+                    <p>Categories: Christmas, ISU, Social Life, Videos</p>
+                    <p>Tags: Admissions, school life, Cyclones, Iowa State University, ISU, memorial union, Midnight pancakes, traditions</p>
+                </div>
+				
             </div>
+			
+            <div class="bottom">
+            
+				<div class="page ">
+                    <h2>Headline</h2>
+                    <p>Lorem ipsum dolor sit amet...</p>
+					</div>
+            </div>
+			
         </div>
     </body>
 </html>
