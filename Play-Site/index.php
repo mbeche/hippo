@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here|Lato:400,400i,700|Montserrat:400,800" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="my-style.css">
         <title>Mellanie's Blog</title>
     </head>
     <body>
-			<div class="menu">
+			<div class="menu" id="full">
 				<div class="tabs">
 					<div class="search">
 						<div class="search-shadow"></div>

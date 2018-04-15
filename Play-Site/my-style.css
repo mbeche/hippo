@@ -18,6 +18,21 @@ a {
 	color: inherit;
 }
 
+@media only screen and (min-width: 850px) {
+	.menu {
+		float: right;
+	}
+	#full {
+		width: 400px;
+	}
+	.main, .bottom {
+		display: inline-block;
+		width: calc(100% - 475px);
+	}
+}
+
+/* @media only screen and (min-width: 1050px) { */
+/* } */
 
 .title {
 	text-align: center;
@@ -46,8 +61,7 @@ a {
 	
 .main {
 	text-align: left;
-    grid-area: main;
-    background-color: #f3bd47;
+	background-color: #f3bd47;
     padding: 20px;
     border-radius: 10px;
     background-size: 10px 10px;
