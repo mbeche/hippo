@@ -1,4 +1,4 @@
-/* 
+/*
 font families:
 font-family: 'Montserrat', sans-serif;
 font-family: 'Lato', sans-serif;
@@ -10,7 +10,7 @@ font-family: 'Just Me Again Down Here', cursive;
 body {
     text-align: center;
     background-color: #3CA879;
-	font-family: Lato, Helvetica, sans-serif;  
+	font-family: Lato, Helvetica, sans-serif;
 }
 
 a {
@@ -23,11 +23,15 @@ a {
 		float: right;
 	}
 	#full {
-		width: 400px;
+		width: 360px;
+    left: 0;
+    margin-right: 10px;
 	}
-	.main, .bottom {
+	.content {
 		display: inline-block;
 		width: calc(100% - 475px);
+    float: left;
+    margin-left: 10px;
 	}
 }
 
@@ -58,7 +62,7 @@ a {
 	color: white;
 	text-shadow: 0px 2px 10px rgba(0, 0, 0, .75);
 }
-	
+
 .main {
 	text-align: left;
 	background-color: #f3bd47;
@@ -67,6 +71,7 @@ a {
     background-size: 10px 10px;
     background-image: linear-gradient(to right, #F2B640 1px, transparent 1px), linear-gradient(to bottom, #F1B33D 1px, transparent 1px);
     box-shadow: 0 0 7px rgba(65, 65, 65, 0.95);
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -127,7 +132,7 @@ h2 {
 
 /* hack to make the shaddow on only the left/top/bottom of search */
 .search-shadow {
-	position: absolute;	
+	position: absolute;
 	bottom: 0px;
 	box-shadow: -2px 2px 4px rgba(65, 65, 65, 0.5);
 	height: 32px;
@@ -172,7 +177,7 @@ h2 {
 }
 
 .tab {
-	margin-right: 
+	margin-right:
 }
 
 .cast, .vid, .topics, .archive {
@@ -209,7 +214,7 @@ h2 {
     background-color: #f3bd47;
     background-size: 10px 10px;
     background-image: linear-gradient(to right, #F2B640 5px, transparent 2px);
-    border: 3px ridge white; 
+    border: 3px ridge white;
     box-shadow: 0 0 7px rgba(65, 65, 65, 0.95);
 }
 
@@ -342,7 +347,7 @@ hr {
 .foldtl {
     position: relative;
  }
-  /* bottom right page turn from: https://codepen.io/brownerd/pen/lEHwL 
+  /* bottom right page turn from: https://codepen.io/brownerd/pen/lEHwL
     also see: https://designshack.net/articles/css/code-a-simple-folded-corner-effect-with-css/
 
     Still not working because background of nav bar. Consider porting this solution: https://codepen.io/pouretrebelle/pen/pbwIj
@@ -366,6 +371,6 @@ hr {
   right: 0%;
   width: 0px;
   height: 0px;
-  border-bottom: 70px solid #272822; 
+  border-bottom: 70px solid #272822;
   border-left: 70px solid transparent;
 }

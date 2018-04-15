@@ -22,12 +22,12 @@
 					<div class="archive"><div class="tab">Archive</div><div class="far">5</div></div>
 				</div>
 
-				<div class="sidebar"> 
-					
+				<div class="sidebar">
+
 					<div class="blogger-posts">
 						<div class="heading">Lastest posts from <span id="auth">Mellanie</span></div>
 						<div class="post">The fire is so delightful (movie)
-							<br><span class="date">posted on December 15, 2011</span>					
+							<br><span class="date">posted on December 15, 2011</span>
 						</div>
 						<hr>
 						<div class="post">Agronomy Courtyard
@@ -50,11 +50,11 @@
 							<div class="button author-more">View All</div>
 						</div>
 					</div>
-					
+
 					<div class="recent-posts">
 						<div class="heading">Latest posts</div>
 						<div class="post">The fire is so delightful (movie)
-							<br><span class="date">posted on December 15, 2011</span>					
+							<br><span class="date">posted on December 15, 2011</span>
 						</div>
 						<hr>
 						<div class="post">Agronomy Courtyard
@@ -90,7 +90,7 @@
 						<br/>
 						<a href="#">Subscribe</a>
 					</div>
-					
+
 					<hr class="menu-hr"/>
 
 					<div class="recent-posts">
@@ -104,33 +104,30 @@
 				<div id="com">.com</div>
 				<span id="school-life">school life</span>
 			</div>
-			
-            <div class="main">
-                <div class="sub">
-					<img class="headshot" src="img/mellanie-post.png" />
-					<div class="author">by Mellanie</div>
-                    <h2>Student in New York: Statue of Liberty</h2>
-					<div class="date">December 13, 2011</div>
-					<p>Easily the best part about being in New York for a football game is the location! There is so much to do in New York, I definitely didn’t do everything I wanted to do!</p>
 
-					<p>I also went to the top of 30 Rock!  This is the view from the top facing the Empire State  Building!</p>
-                </div>
-				
-                <div class="tags">
-                    <p>Categories: Christmas, ISU, Social Life, Videos</p>
-                    <p>Tags: Admissions, school life, Cyclones, Iowa State University, ISU, memorial union, Midnight pancakes, traditions</p>
-                </div>
-				
-            </div>
-			
-            <div class="bottom">
-            
-				<div class="page ">
-                    <h2>Headline</h2>
-                    <p>Lorem ipsum dolor sit amet...</p>
-					</div>
-            </div>
-			
+      <div class="content">
+        <div class="main">
+          <div class="sub">
+            <img class="headshot" src="img/mellanie-post.png" />
+				    <div class="author">by Mellanie</div>
+            <h2>Student in New York: Statue of Liberty</h2>
+            <div class="date">December 13, 2011</div>
+              <p>Easily the best part about being in New York for a football game is the location! There is so much to do in New York, I definitely didn’t do everything I wanted to do!</p>
+              <p>I also went to the top of 30 Rock!  This is the view from the top facing the Empire State  Building!</p>
+          </div>
+
+          <div class="tags">
+            <p>Categories: Christmas, ISU, Social Life, Videos</p>
+            <p>Tags: Admissions, school life, Cyclones, Iowa State University, ISU, memorial union, Midnight pancakes, traditions</p>
+          </div>
         </div>
+
+        <div class="bottom">
+				  <div class="page ">
+                  <h2>Headline</h2>
+                  <p>Lorem ipsum dolor sit amet...</p>
+				  </div>
+        </div>
+      </div>
     </body>
 </html>
