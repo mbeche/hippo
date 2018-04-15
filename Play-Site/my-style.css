@@ -18,6 +18,25 @@ a {
 	color: inherit;
 }
 
+.disclaimer {
+  white-space: nowrap;
+  background: rgba(174,199,215,0.1);
+  text-align: left;
+  font-size: 10px;
+  position: absolute;
+  padding: 5px;
+  /* font-weight: bold; */
+  color: rgba(2,98,56,1);
+  text-transform: uppercase;
+  border: 2px solid rgba(52,148,106,0.4);
+  left: 0;
+  top: 0;
+}
+
+.disclaimer a {
+  text-decoration: underline;
+}
+
 @media only screen and (min-width: 850px) {
 	.menu {
 		float: right;
@@ -84,6 +103,17 @@ h2 {
 	margin: 5px 0;
 }
 
+h3 {
+	color: #2C5169;
+  margin: 0 0;
+  padding: 20px 0;
+	font-weight: normal;
+	font-size: 38px;
+  line-height: 38px;
+	font-family: 'Just Me Again Down Here';
+  text-shadow: 0px 0px 1px rgba(44,81,105, 0.5);
+}
+
 .sub {
   background-color: rgb(248,215,145,.5);
   position: relative;
@@ -91,12 +121,17 @@ h2 {
   padding: 25px 40px;
 }
 
+.round {
+  border-radius: 5px;
+  width: 469px;
+  max-width: 100%;
+}
 
 .tags {
-    position: relative;
-    top: 10px;
-    padding: 20px 30px 0 30px;
-    background-color: transparent;
+  position: relative;
+  top: 10px;
+  padding: 20px 30px 0 30px;
+  background-color: transparent;
 }
 
 .headshot {
@@ -131,12 +166,12 @@ h2 {
   position: relative;
   left: -33px;
   z-index: 1;
-  margin-bottom: 120px;
+  margin-bottom: 25px;
   margin-top: 7px;
   box-shadow: -2px -2px 3px rgba(65, 65, 65, 0.5);
 }
 
-/* hack to make the shaddow on only the left/top/bottom of search */
+/* to make the shaddow on only the left/top/bottom of search */
 .search-shadow {
   position: absolute;
   bottom: 0px;
@@ -164,7 +199,7 @@ h2 {
   left: 5px;
   top: 5px;
   color: #CF1B2A;
-  text-shadow: 1px 1px 5px rgba(65, 65, 65, 0.5);
+  text-shadow: 0.5px 0.5px 5px rgba(65, 65, 65, 0.5);
 }
 
 /* formatting for the remainder of icons */
@@ -177,39 +212,44 @@ h2 {
 	font-size: 24px;
   position: absolute;
   color: #CF1B2A;
-  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
-  right: -9px;
+  text-shadow: 0px 0px 0.5px rgba(255, 255, 255, 0.5);
+  right: -7px;
   top: 17px;
 }
 
 .tab {
-	margin-right:
+  position: relative;
+  height: 70px;
+  margin-bottom: 0px;
+  padding-top: 40px;
 }
 
-.archive {
-  padding-left: 30px;
-  width: 150px;
+#archive {
+  margin-top: 23px;
 }
+
 
 .cast, .vid, .topics, .archive {
   z-index: -1;
-  position: relative;
-  left: 90px;
+  position: absolute;
+  white-space: nowrap;
+  left: 95px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   transform: rotate(-90deg);
   transform-origin: bottom left;
   height: 120px;
-  padding-top: 7px;
-  padding-left: 14px;
-  padding-right: 0;
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-right: 35px;
   margin-top: 10px;
   font-weight: bold;
+  font-size: 14px;
   background-color: #F3BD48;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.35);
   text-transform: uppercase;
   color: rgba(77, 58, 58, 255);
-  text-shadow: 0px 0px 4px rgba(65, 65, 65, 0.45);
+  text-shadow: 0px 0px 0.5px rgba(255, 255, 255, 0.5);
 }
 
 
@@ -258,13 +298,13 @@ h2 {
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 0.5px solid #FACF46;
-	border-bottom: 0.25px solid #CC901F;
-    margin: 0 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 0.5px solid #FACF46;
+  border-bottom: 0.25px solid #CC901F;
+  margin: 0 0;
+  padding: 0;
 }
 
 .menu-hr {
@@ -277,16 +317,16 @@ hr {
 }
 
 .button {
-    border-radius: 5px;
-    color: white;
-	text-transform: uppercase;
-	font-size: 10px;
-	padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-	width: 60px;
-	height: 15px;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 60px;
+  height: 15px;
 }
 
 .author-more {
@@ -310,13 +350,13 @@ hr {
 }
 
 .recent-posts hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 0.5px solid #B9D4E6;
-	border-bottom: 0.25px solid #7E98A8;
-    margin: 0 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 0.5px solid #B9D4E6;
+  border-bottom: 0.25px solid #7E98A8;
+  margin: 0 0;
+  padding: 0;
 }
 
 .all-more {
@@ -349,30 +389,36 @@ hr {
 }
 
 .bottom {
-    grid-area: bottom;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  grid-area: bottom;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  padding-bottom: 20px;
 }
 
-.foldtl {
-    position: relative;
- }
-  /* bottom right page turn from: https://codepen.io/brownerd/pen/lEHwL
-    also see: https://designshack.net/articles/css/code-a-simple-folded-corner-effect-with-css/
+/*
+  My patched attempt at making the fold on the bottom right of the menu.
+  My issue is that the background is visible when I use the following:
 
-    Still not working because background of nav bar. Consider porting this solution: https://codepen.io/pouretrebelle/pen/pbwIj
-    */
+  bottom right page turn from: https://codepen.io/brownerd/pen/lEHwL
+  also see: https://designshack.net/articles/css/code-a-simple-folded-corner-effect-with-css/
+
+  Still not working because background of nav bar. Consider porting this solution: https://codepen.io/pouretrebelle/pen/pbwIj
+  */
+
+.foldtl {
+  position: relative;
+ }
 
 .foldtl:before {
-    content: "";
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    width: 0px;
-    height: 0px;
-    border-top: 70px solid #eee;
-    border-right: 70px solid transparent;
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 0px;
+  height: 0px;
+  border-top: 70px solid #eee;
+  border-right: 70px solid transparent;
 }
 
 .foldtl:after {
