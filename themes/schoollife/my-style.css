@@ -1,0 +1,351 @@
+
+@font-face {font-family:"Heydings Icons";src:url("font-face/heydings_icons.eot?") format("eot"),url("font-face/heydings_icons.woff") format("woff"),url("font-face/heydings_icons.ttf") format("truetype"),url("font-face/heydings_icons.svg#HeydingsIcons") format("svg");font-weight:normal;font-style:normal;}
+
+body {
+    text-align: center;
+    background-color: #3CA879;
+	font-family: Lato, Helvetica, sans-serif;  
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+.title {
+	text-align: center;
+	position: relative;
+	display: inline-block;
+    margin: 50px auto 100px auto;
+ 	font-family: Montserrat;
+	text-transform: uppercase;
+}
+
+#com {
+	font-weight: bold;
+	text-align: right;
+	font-size: 30px;
+	line-height: 30px;
+	width: 100%;
+}
+
+#school-life {
+	font-weight: bold;
+	font-size: 49px;
+	line-height: 50px;
+	color: white;
+	text-shadow: 0px 2px 10px rgba(0, 0, 0, .75);
+}
+	
+.main {
+	text-align: left;
+    grid-area: main;
+    background-color: #f3bd47;
+    padding: 20px;
+    border-radius: 10px;
+    background-size: 10px 10px;
+    background-image: linear-gradient(to right, #F2B640 1px, transparent 1px), linear-gradient(to bottom, #F1B33D 1px, transparent 1px);
+    box-shadow: 0 0 7px rgba(65, 65, 65, 0.95);
+}
+
+h2 {
+	color: #BA222B;
+	margin: 5px 0;
+}
+
+.sub {
+    background-color: rgb(248,215,145,.5);
+    position: relative;
+    border-radius: 10px;
+	padding: 25px 40px;
+}
+
+
+.tags {
+    position: relative;
+    top: 10px;
+    padding: 20px 30px 0 30px;
+    background-color: transparent;
+}
+
+.headshot {
+	position: absolute;
+	left: 10px;
+	top: -100px;
+	box-shadow: 0 5px 5px -5px #333;
+}
+
+.author {
+	font-family: "Just Me Again Down Here";
+	font-size: 40px;
+	position: absolute;
+	left: 100px;
+	top: -85px;
+	letter-spacing: -1px;
+	color: rgb(255,255,255);
+}
+
+.tabs {
+	position: absolute;
+}
+
+.search {
+    height: 30px;
+    width: 30px;
+	padding-top: 1px;
+	background-color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: relative;
+    left: -33px;
+    z-index: 1;
+    margin-bottom: 120px;
+	margin-top: 7px;
+	box-shadow: -2px -2px 3px rgba(65, 65, 65, 0.5);
+}
+
+/* hack to make the shaddow on only the left/top/bottom of search */
+.search-shadow {
+	position: absolute;	
+	bottom: 0px;
+	box-shadow: -2px 2px 4px rgba(65, 65, 65, 0.5);
+	height: 32px;
+	z-index: -1;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+	width: 30px;
+}
+
+/* positioning of the "search + arrow" image */
+.search-text {
+	position: absolute;
+	right: 20px;
+	top: 35px;
+}
+
+/* formatting for search icon */
+.fas {
+	font-family:'Heydings Icons';
+    text-transform: none;
+	font-size: 20px;
+    position: absolute;
+    left: 5px;
+	top: 5px;
+	color: #CF1B2A;
+    text-shadow: 1px 1px 5px rgba(65, 65, 65, 0.5);
+}
+
+/* formatting for the remainder of icons */
+.far {
+	font-family:'Heydings Icons';
+	font-weight: normal;
+    transform: rotate(90deg);
+    transform-origin: 50% top;
+    text-transform: none;
+	font-size: 24px;
+    position: absolute;
+    color: #CF1B2A;
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
+    right: -9px;
+    top: 17px;
+}
+
+.tab {
+	margin-right: 
+}
+
+.cast, .vid, .topics, .archive {
+    position: relative;
+    left: 90px;
+	z-index: -1;
+    padding-left: 14px;
+    padding-right: 0;
+    padding-top: 7px;
+    white-space: nowrap;
+    color: rgba(77, 58, 58, 255);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0px 0px 4px rgba(65, 65, 65, 0.45);
+    height: 120px;
+	margin-top: 10px;
+    background-color: #F3BD48;
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+.menu {
+	text-align: left;
+	font-weight: bold;
+    position: relative;
+	left: 40px;
+    display: flex;
+	width: calc(100% - 40px);
+    flex-direction: column;
+    bottom: 10px;
+    background-color: #f3bd47;
+    background-size: 10px 10px;
+    background-image: linear-gradient(to right, #F2B640 5px, transparent 2px);
+    border: 3px ridge white; 
+    box-shadow: 0 0 7px rgba(65, 65, 65, 0.95);
+}
+
+.heading {
+	font-size: 12pt;
+	letter-spacing: 1px;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #3F6176;
+	text-align: left;
+    background: white;
+    box-shadow: 0 4px 4px -2px rgba(65, 65, 65, 0.5);
+}
+
+/* to make the author's name red in the "more posts" menu */
+#auth {
+	color: #D92B39;
+}
+
+.post {
+	color: rgba(85, 61, 5, 255);
+	padding: 12px 40px;
+}
+
+.date {
+	color:rgba(133, 98, 3, 255);
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 0.5px solid #FACF46;
+	border-bottom: 0.25px solid #CC901F;
+    margin: 0 0;
+    padding: 0;
+}
+
+.menu-hr {
+    display: block;
+    height: 0px;
+    border: 0;
+    border-top: 2px solid white;
+    margin: 0 0;
+    padding: 0;
+}
+
+.button {
+    border-radius: 5px;
+    color: white;
+	text-transform: uppercase;
+	font-size: 10px;
+	padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	width: 60px;
+	height: 15px;
+}
+
+.author-more {
+	background: #D12735;
+}
+
+.recent-posts {
+	background-color: #AEC7D7;
+}
+
+.recent-posts .post {
+	color: rgba(44, 81, 105, 255);
+}
+
+.post-author {
+	font-size: 10px;
+}
+
+.recent-posts .date {
+	color: #8C7429;
+}
+
+.recent-posts hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 0.5px solid #B9D4E6;
+	border-bottom: 0.25px solid #7E98A8;
+    margin: 0 0;
+    padding: 0;
+}
+
+.all-more {
+	background: #215B83;
+}
+
+.btm-menu {
+	position:relative;
+	/* top: -1px; */
+	background-color: #1C527A;
+    background-size: 10px 10px;
+    background-image: linear-gradient(to right, #296383 5px, transparent 2px);
+	width: 100%;
+	box-sizing:border-box;
+	border-right: 0.33px white solid;
+	padding: 30px 40px;
+	color: white;
+	font-weight: normal;
+	font-size: 30px;
+	font-family: 'Just Me Again Down Here';
+}
+
+.copyright {
+	padding: 10px;
+	color: #296383;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 10px;
+	margin: auto;
+}
+
+.bottom {
+    grid-area: bottom;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.foldtl {
+    position: relative;
+ }
+  /* bottom right page turn from: https://codepen.io/brownerd/pen/lEHwL 
+    also see: https://designshack.net/articles/css/code-a-simple-folded-corner-effect-with-css/
+
+    Still not working because background of nav bar. Consider porting this solution: https://codepen.io/pouretrebelle/pen/pbwIj
+    */
+
+.foldtl:before {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 0px;
+    height: 0px;
+    border-top: 70px solid #eee;
+    border-right: 70px solid transparent;
+}
+
+.foldtl:after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 0px;
+  height: 0px;
+  border-bottom: 70px solid #272822; 
+  border-left: 70px solid transparent;
+}

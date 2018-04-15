@@ -1,0 +1,401 @@
+@charset "UTF-8";
+/* line 5, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 30, ../sass/games-style.scss */
+blockquote {
+  background: #dcd1e1;
+  border-left: 10px solid #6ca6c1;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "“" "”" "‘" "’";
+  FONT-SIZE: 14px;
+  font-style: italic;
+  text-align: left;
+  COLOR: Black;
+  LINE-HEIGHT: 16px;
+  FONT-FAMILY: Helvetica,"Arial Narrow",sans-serif;
+}
+
+/* line 44, ../sass/games-style.scss */
+code {
+  FONT-SIZE: 12px;
+}
+
+/* line 48, ../sass/games-style.scss */
+mark {
+  background-color: #6ca6c1;
+  color: black;
+}
+
+/* line 53, ../sass/games-style.scss */
+.rcorners {
+  border-radius: 25px;
+  background: #bfdbf7;
+  padding: 1px 20px 1px;
+}
+
+/* line 62, ../sass/games-style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 68, ../sass/games-style.scss */
+html p {
+  font-size: 1.25em;
+}
+/* line 72, ../sass/games-style.scss */
+html h1, html h2, html h3 {
+  font-family: Bitter, Georgia, serif;
+  padding: 0 1em;
+}
+/* line 77, ../sass/games-style.scss */
+html h1 h1, html h2 h1, html h3 h1 {
+  font-size: 3em;
+}
+/* line 81, ../sass/games-style.scss */
+html h1 h2, html h2 h2, html h3 h2 {
+  font-size: 2em;
+}
+/* line 85, ../sass/games-style.scss */
+html h1 h3, html h2 h3, html h3 h3 {
+  font-size: 2em;
+}
+
+/* line 93, ../sass/games-style.scss */
+.nav {
+  background-color: #6ca6c1;
+  font-family: arial, tahoma;
+  font-weight: bold;
+  border-bottom: 2px solid #331832;
+  border-top: 2px solid #331832;
+  /* Change the link color to #111 (black) on hover */
+}
+/* line 100, ../sass/games-style.scss */
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 106, ../sass/games-style.scss */
+.nav li {
+  border-right: 2px solid #331832;
+  float: left;
+}
+/* line 111, ../sass/games-style.scss */
+.nav li:last-child {
+  border-left: 2px solid #331832;
+  float: right;
+}
+/* line 116, ../sass/games-style.scss */
+.nav a {
+  height: 40px;
+  color: #331832;
+  display: block;
+  padding: 8px;
+}
+/* line 124, ../sass/games-style.scss */
+.nav li a:hover {
+  text-decoration: none;
+  background-color: #331832;
+  color: #6ca6c1;
+}
+
+/* line 133, ../sass/games-style.scss */
+.box {
+  border-radius: 25px;
+  color: #472836;
+  margin: auto;
+  margin: 0.5em;
+  text-align: left;
+  background: #bfdbf7;
+  padding: 20px 20px 20px;
+  display: inline-block;
+}
+
+/* line 145, ../sass/games-style.scss */
+.body-box {
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+  max-width: 75%;
+  border-radius: 25px;
+  text-align: center;
+  background: #bfdbf7;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin: .5em;
+  padding: 0px 10px 10px 10px;
+}
+/* line 155, ../sass/games-style.scss */
+.body-box a {
+  float: middle;
+  color: #6ca6c1;
+  display: block;
+  padding: 0px 10px 20px 10px;
+  overflow: auto;
+}
+/* line 163, ../sass/games-style.scss */
+.body-box .box {
+  width: 80%;
+  background-color: #331832;
+  margin: 0.5em;
+  padding: 0px 0px 0px 0px;
+}
+/* line 169, ../sass/games-style.scss */
+.body-box .box a:hover {
+  -moz-transform: scale(1.25, 1.25);
+  -ms-transform: scale(1.25, 1.25);
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+  color: grey;
+  text-shadow: 0px 0px 10px;
+  text-decoration: none;
+  color: #6ca6c1;
+}
+
+@media only screen and (max-width: 1000px) {
+  /* line 182, ../sass/games-style.scss */
+  .body-box {
+    max-width: 100%;
+  }
+}
+/* line 189, ../sass/games-style.scss */
+.header,
+.footer {
+  text-align: center;
+  background: #331832;
+  padding: 1em 1em 1em;
+  color: #6ca6c1;
+  font-style: italic;
+}
+/* line 196, ../sass/games-style.scss */
+.header #tagline,
+.footer #tagline {
+  color: #6ca6c1;
+  font-style: normal;
+}
+
+/* line 202, ../sass/games-style.scss */
+.bar {
+  overflow: auto;
+  color: #331832;
+  height: 80px;
+  background: #6ca6c1;
+  width: 100%;
+  margin: auto;
+}
+
+/* line 213, ../sass/games-style.scss */
+.avatar {
+  -moz-box-shadow: 0 0 10px 4px #6ca6c1, 0 0 12px 6px #331832, 0 0 14px 10px #331832;
+  -webkit-box-shadow: 0 0 10px 4px #6ca6c1, 0 0 12px 6px #331832, 0 0 14px 10px #331832;
+  box-shadow: 0 0 10px 4px #6ca6c1, 0 0 12px 6px #331832, 0 0 14px 10px #331832;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  width: 150px;
+  height: 150px;
+}
+
+/* line 221, ../sass/games-style.scss */
+section {
+  background-color: #331832;
+  border-top: 1px solid #331832;
+  border-bottom: 1px solid #331832;
+  border-collapse: collapse;
+  padding: 0.5% 0.5% 0.5% 0.5%;
+}
+
+/* line 229, ../sass/games-style.scss */
+body {
+  text-align: center;
+  font: 1em/1.5 Georgia, serif;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?uhpmsn");
+  src: url("fonts/icomoon.eot?uhpmsn#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?uhpmsn") format("truetype"), url("fonts/icomoon.woff?uhpmsn") format("woff"), url("fonts/icomoon.svg?uhpmsn#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 248, ../sass/games-style.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 263, ../sass/games-style.scss */
+.icon-envelop:before {
+  content: "\e945";
+}
+
+/* line 266, ../sass/games-style.scss */
+.icon-mobile:before {
+  content: "\e958";
+}
+
+/* line 269, ../sass/games-style.scss */
+.icon-linkedin:before {
+  content: "\eac9";
+}
+
+/* line 273, ../sass/games-style.scss */
+#contact {
+  background: #053c5e;
+  padding: 40px 20x 20px 20x;
+  max-width: 520px;
+  border-radius: 25px;
+  margin: auto;
+  color: #bfdbf7;
+}
+
+/* line 283, ../sass/games-style.scss */
+#linked {
+  background: #694d75;
+  padding: 20px 15px 20px 15px;
+  border-radius: 25px;
+}
+
+/* line 289, ../sass/games-style.scss */
+#email {
+  background: #1b5299;
+  padding: 20px 15px 20px 15px;
+  border-radius: 25px;
+}
+
+/* line 295, ../sass/games-style.scss */
+#phone {
+  background: #5a0b4d;
+  padding: 20px 15px 20px 15px;
+  border-radius: 25px;
+}
+
+/* line 302, ../sass/games-style.scss */
+.social {
+  margin: 2em 0;
+}
+/* line 306, ../sass/games-style.scss */
+.social li {
+  font-size: 1.5em;
+  color: #bfdbf7;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin: .5em;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+/* line 315, ../sass/games-style.scss */
+.social li:hover {
+  -moz-transform: scale(1.25, 1.25);
+  -ms-transform: scale(1.25, 1.25);
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+  color: grey;
+  text-shadow: 0px 0px 10px;
+}
+/* line 321, ../sass/games-style.scss */
+.social li:hover #phone #email #linked {
+  background: #36454f;
+}
+/* line 326, ../sass/games-style.scss */
+.social li:before {
+  position: absolute;
+  width: 2em;
+  /* center align technique, give width, negative half margin */
+  margin-left: -1em;
+  top: 0m;
+  left: 50%;
+}
+/* line 334, ../sass/games-style.scss */
+.social li a {
+  display: block;
+  color: inherit;
+  font-family: Tahoma, Georgia, serif;
+  padding: 1.50em 0em 0em;
+  width: 6em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
