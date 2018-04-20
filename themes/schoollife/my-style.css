@@ -258,9 +258,7 @@ h3 {
 	font-weight: bold;
   position: relative;
 	left: 40px;
-  display: flex;
 	width: calc(100% - 55px);
-  flex-direction: column;
   bottom: 10px;
   background-color: #f3bd47;
   background-size: 10px 10px;
