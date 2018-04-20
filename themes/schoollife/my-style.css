@@ -1,10 +1,16 @@
+/*
+font families:
+font-family: 'Montserrat', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Just Me Again Down Here', cursive;
+ */
 
 @font-face {font-family:"Heydings Icons";src:url("font-face/heydings_icons.eot?") format("eot"),url("font-face/heydings_icons.woff") format("woff"),url("font-face/heydings_icons.ttf") format("truetype"),url("font-face/heydings_icons.svg#HeydingsIcons") format("svg");font-weight:normal;font-style:normal;}
 
 body {
-    text-align: center;
-    background-color: #3CA879;
-	font-family: Lato, Helvetica, sans-serif;  
+  text-align: center;
+  background-color: #3CA879;
+  font-family: Lato, Helvetica, sans-serif;
 }
 
 a {
@@ -12,14 +18,57 @@ a {
 	color: inherit;
 }
 
+.disclaimer {
+  white-space: nowrap;
+  background: rgba(174,199,215,0.1);
+  text-align: left;
+  font-size: 10px;
+  position: absolute;
+  padding: 5px;
+  /* font-weight: bold; */
+  color: rgba(2,98,56,1);
+  text-transform: uppercase;
+  border: 2px solid rgba(52,148,106,0.4);
+  left: 0;
+  top: 0;
+}
+
+.disclaimer a {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 850px) {
+	.menu {
+		float: right;
+	}
+	#full {
+		width: 360px;
+    left: 0;
+    margin-right: 10px;
+	}
+	.content {
+		display: inline-block;
+		width: calc(100% - 475px);
+    float: left;
+    margin-left: 10px;
+	}
+}
+
+.content {
+  margin-bottom: 40px;
+}
+
+#full {
+  margin-right: 20px;
+}
 
 .title {
-	text-align: center;
-	position: relative;
-	display: inline-block;
-    margin: 50px auto 100px auto;
- 	font-family: Montserrat;
-	text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin: 50px auto 100px auto;
+  font-family: Montserrat;
+  text-transform: uppercase;
 }
 
 #com {
@@ -37,16 +86,16 @@ a {
 	color: white;
 	text-shadow: 0px 2px 10px rgba(0, 0, 0, .75);
 }
-	
+
 .main {
 	text-align: left;
-    grid-area: main;
-    background-color: #f3bd47;
-    padding: 20px;
-    border-radius: 10px;
-    background-size: 10px 10px;
-    background-image: linear-gradient(to right, #F2B640 1px, transparent 1px), linear-gradient(to bottom, #F1B33D 1px, transparent 1px);
-    box-shadow: 0 0 7px rgba(65, 65, 65, 0.95);
+	background-color: #f3bd47;
+  padding: 20px;
+  border-radius: 10px;
+  background-size: 10px 10px;
+  background-image: linear-gradient(to right, #F2B640 1px, transparent 1px), linear-gradient(to bottom, #F1B33D 1px, transparent 1px);
+  box-shadow: 0 0 7px rgba(65, 65, 65, 0.95);
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -54,19 +103,35 @@ h2 {
 	margin: 5px 0;
 }
 
-.sub {
-    background-color: rgb(248,215,145,.5);
-    position: relative;
-    border-radius: 10px;
-	padding: 25px 40px;
+h3 {
+	color: #2C5169;
+  margin: 0 0;
+  padding: 20px 0;
+	font-weight: normal;
+	font-size: 38px;
+  line-height: 38px;
+	font-family: 'Just Me Again Down Here';
+  text-shadow: 0px 0px 1px rgba(44,81,105, 0.5);
 }
 
+.sub {
+  background-color: rgb(248,215,145,.5);
+  position: relative;
+  border-radius: 10px;
+  padding: 25px 40px;
+}
+
+.round {
+  border-radius: 5px;
+  width: 469px;
+  max-width: 100%;
+}
 
 .tags {
-    position: relative;
-    top: 10px;
-    padding: 20px 30px 0 30px;
-    background-color: transparent;
+  position: relative;
+  top: 10px;
+  padding: 20px 30px 0 30px;
+  background-color: transparent;
 }
 
 .headshot {
@@ -78,6 +143,7 @@ h2 {
 
 .author {
 	font-family: "Just Me Again Down Here";
+  text-shadow: 0px 0px 0.5px rgba(255, 255, 255, 0.5);
 	font-size: 40px;
 	position: absolute;
 	left: 100px;
@@ -91,30 +157,30 @@ h2 {
 }
 
 .search {
-    height: 30px;
-    width: 30px;
-	padding-top: 1px;
-	background-color: white;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    position: relative;
-    left: -33px;
-    z-index: 1;
-    margin-bottom: 120px;
-	margin-top: 7px;
-	box-shadow: -2px -2px 3px rgba(65, 65, 65, 0.5);
+  height: 30px;
+  width: 30px;
+  padding-top: 1px;
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  position: relative;
+  left: -33px;
+  z-index: 1;
+  margin-bottom: 25px;
+  margin-top: 7px;
+  box-shadow: -2px -2px 3px rgba(65, 65, 65, 0.5);
 }
 
-/* hack to make the shaddow on only the left/top/bottom of search */
+/* to make the shaddow on only the left/top/bottom of search */
 .search-shadow {
-	position: absolute;	
-	bottom: 0px;
-	box-shadow: -2px 2px 4px rgba(65, 65, 65, 0.5);
-	height: 32px;
-	z-index: -1;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-	width: 30px;
+  position: absolute;
+  bottom: 0px;
+  box-shadow: -2px 2px 4px rgba(65, 65, 65, 0.5);
+  height: 32px;
+  z-index: -1;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 30px;
 }
 
 /* positioning of the "search + arrow" image */
@@ -126,83 +192,93 @@ h2 {
 
 /* formatting for search icon */
 .fas {
-	font-family:'Heydings Icons';
-    text-transform: none;
-	font-size: 20px;
-    position: absolute;
-    left: 5px;
-	top: 5px;
-	color: #CF1B2A;
-    text-shadow: 1px 1px 5px rgba(65, 65, 65, 0.5);
+  font-family:'Heydings Icons';
+  text-transform: none;
+  font-size: 20px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  color: #CF1B2A;
+  text-shadow: 0.5px 0.5px 5px rgba(65, 65, 65, 0.5);
 }
 
 /* formatting for the remainder of icons */
 .far {
 	font-family:'Heydings Icons';
 	font-weight: normal;
-    transform: rotate(90deg);
-    transform-origin: 50% top;
-    text-transform: none;
+  transform: rotate(90deg);
+  transform-origin: 50% top;
+  text-transform: none;
 	font-size: 24px;
-    position: absolute;
-    color: #CF1B2A;
-    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
-    right: -9px;
-    top: 17px;
+  position: absolute;
+  color: #CF1B2A;
+  text-shadow: 0px 0px 0.5px rgba(255, 255, 255, 0.5);
+  right: -7px;
+  top: 17px;
 }
 
 .tab {
-	margin-right: 
+  position: relative;
+  height: 70px;
+  margin-bottom: 0px;
+  padding-top: 40px;
 }
 
+#archive {
+  margin-top: 23px;
+}
+
+
 .cast, .vid, .topics, .archive {
-    position: relative;
-    left: 90px;
-	z-index: -1;
-    padding-left: 14px;
-    padding-right: 0;
-    padding-top: 7px;
-    white-space: nowrap;
-    color: rgba(77, 58, 58, 255);
-    text-transform: uppercase;
-    font-weight: bold;
-    text-shadow: 0px 0px 4px rgba(65, 65, 65, 0.45);
-    height: 120px;
-	margin-top: 10px;
-    background-color: #F3BD48;
-    transform: rotate(-90deg);
-    transform-origin: bottom left;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+  z-index: -1;
+  position: absolute;
+  white-space: nowrap;
+  left: 95px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+  height: 120px;
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-right: 35px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #F3BD48;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.35);
+  text-transform: uppercase;
+  color: rgba(77, 58, 58, 255);
+  text-shadow: 0px 0px 0.5px rgba(255, 255, 255, 0.5);
 }
 
 
 .menu {
 	text-align: left;
 	font-weight: bold;
-    position: relative;
+  position: relative;
 	left: 40px;
-    display: flex;
-	width: calc(100% - 40px);
-    flex-direction: column;
-    bottom: 10px;
-    background-color: #f3bd47;
-    background-size: 10px 10px;
-    background-image: linear-gradient(to right, #F2B640 5px, transparent 2px);
-    border: 3px ridge white; 
-    box-shadow: 0 0 7px rgba(65, 65, 65, 0.95);
+  display: flex;
+	width: calc(100% - 55px);
+  flex-direction: column;
+  bottom: 10px;
+  background-color: #f3bd47;
+  background-size: 10px 10px;
+  background-image: linear-gradient(to right, #F2B640 5px, transparent 2px);
+  border: 3px ridge white;
+  box-shadow: 0 0 7px rgba(65, 65, 65, 0.95);
 }
 
 .heading {
-	font-size: 12pt;
-	letter-spacing: 1px;
-	padding: 15px 30px;
-	text-transform: uppercase;
-	font-weight: bold;
-	color: #3F6176;
-	text-align: left;
-    background: white;
-    box-shadow: 0 4px 4px -2px rgba(65, 65, 65, 0.5);
+  font-size: 12pt;
+  letter-spacing: 1px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #3F6176;
+  text-align: left;
+  background: white;
+  box-shadow: 0 4px 4px -2px rgba(65, 65, 65, 0.5);
 }
 
 /* to make the author's name red in the "more posts" menu */
@@ -222,13 +298,13 @@ h2 {
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 0.5px solid #FACF46;
-	border-bottom: 0.25px solid #CC901F;
-    margin: 0 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 0.5px solid #FACF46;
+  border-bottom: 0.25px solid #CC901F;
+  margin: 0 0;
+  padding: 0;
 }
 
 .menu-hr {
@@ -241,16 +317,16 @@ hr {
 }
 
 .button {
-    border-radius: 5px;
-    color: white;
-	text-transform: uppercase;
-	font-size: 10px;
-	padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-	width: 60px;
-	height: 15px;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 60px;
+  height: 15px;
 }
 
 .author-more {
@@ -274,13 +350,13 @@ hr {
 }
 
 .recent-posts hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 0.5px solid #B9D4E6;
-	border-bottom: 0.25px solid #7E98A8;
-    margin: 0 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 0.5px solid #B9D4E6;
+  border-bottom: 0.25px solid #7E98A8;
+  margin: 0 0;
+  padding: 0;
 }
 
 .all-more {
@@ -289,18 +365,18 @@ hr {
 
 .btm-menu {
 	position:relative;
-	/* top: -1px; */
 	background-color: #1C527A;
-    background-size: 10px 10px;
-    background-image: linear-gradient(to right, #296383 5px, transparent 2px);
+  background-size: 10px 10px;
+  background-image: linear-gradient(to right, #296383 5px, transparent 2px);
 	width: 100%;
 	box-sizing:border-box;
 	border-right: 0.33px white solid;
 	padding: 30px 40px;
 	color: white;
 	font-weight: normal;
-	font-size: 30px;
+	font-size: 38px;
 	font-family: 'Just Me Again Down Here';
+  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.5);
 }
 
 .copyright {
@@ -313,30 +389,36 @@ hr {
 }
 
 .bottom {
-    grid-area: bottom;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  grid-area: bottom;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  padding-bottom: 20px;
 }
 
-.foldtl {
-    position: relative;
- }
-  /* bottom right page turn from: https://codepen.io/brownerd/pen/lEHwL 
-    also see: https://designshack.net/articles/css/code-a-simple-folded-corner-effect-with-css/
+/*
+  My patched attempt at making the fold on the bottom right of the menu.
+  My issue is that the background is visible when I use the following:
 
-    Still not working because background of nav bar. Consider porting this solution: https://codepen.io/pouretrebelle/pen/pbwIj
-    */
+  bottom right page turn from: https://codepen.io/brownerd/pen/lEHwL
+  also see: https://designshack.net/articles/css/code-a-simple-folded-corner-effect-with-css/
+
+  Still not working because background of nav bar. Consider porting this solution: https://codepen.io/pouretrebelle/pen/pbwIj
+  */
+
+.foldtl {
+  position: relative;
+ }
 
 .foldtl:before {
-    content: "";
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    width: 0px;
-    height: 0px;
-    border-top: 70px solid #eee;
-    border-right: 70px solid transparent;
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 0px;
+  height: 0px;
+  border-top: 70px solid #eee;
+  border-right: 70px solid transparent;
 }
 
 .foldtl:after {
@@ -346,6 +428,6 @@ hr {
   right: 0%;
   width: 0px;
   height: 0px;
-  border-bottom: 70px solid #272822; 
+  border-bottom: 70px solid #272822;
   border-left: 70px solid transparent;
 }
