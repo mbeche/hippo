@@ -6,10 +6,9 @@
     <div class="date"><?php the_date(); ?></div>
        <?php the_content(); ?>
   </div>
-
-  <div class="tags">
-    <p>Categories: Christmas, ISU, Social Life, Videos</p>
-    <p>Tags: Admissions, school life, Cyclones, Iowa State University, ISU, memorial union, Midnight pancakes, traditions</p>
+  <div class="crosslist">
+    <p class="categories"><span class="category">Categories:</span> <?php echo get_the_category_list(', '); ?></p>
+	<p class="tags"><span class="tag">Tags</span>: <?php echo get_the_tag_list('', ', '); ?></p>
   </div>
 </div>
 
